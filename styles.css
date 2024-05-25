@@ -20,6 +20,10 @@ body {
     border-left: 2.4px solid black;
     border-radius: 60px;
 }
+hr {
+    border-color: rgba(255, 255, 255, 0.548);
+    border-width: 1px;
+}
 
 header {
     background-color: #0E0E0E;
@@ -224,18 +228,25 @@ header {
     background-color: #0E0E0E;
     min-height: 300px;
     max-height: 816px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section2 h1 {
     color: #ffffff;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 600;
+    width: 40vw;
+    border-bottom: 2px solid white;
     margin: .8em 0em .9em;
     justify-content: center;
     display: flex;
 }
 .section2 img{
-    width: 15%;
+    width: 30%;
     margin: 0em 2em 0em 2em;
 }
 @media (max-width: 1185px) {
@@ -502,18 +513,19 @@ header {
 .section5 {
     color: white;
     background-color: #0E0E0E;
+    margin-top: 50px;
 }
 
 .section5 div {
-    margin: 0 3%;
+    margin: 0 4.3%;
 }
 
 .section5 div h1 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 400;
 }
 .section5 div h3 {
-    font-size: 2vw;
+    font-size: 1.4vw;
     width: 90%;
     font-weight: 400;
 }
