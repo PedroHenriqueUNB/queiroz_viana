@@ -39,7 +39,7 @@ function enviarWhats() {
     var mensagem = `Olá, meu nome é ${nome}, gostaria de solicitar um serviço. A mensagem é a seguinte: "${messageUsuario}". Agradeço desde já pela atenção.`
     mensagem = encodeURIComponent(mensagem);
     var link = "https://wa.me/"
-             + "/" + 6195997277
+             + "/" + 5561995997277
              + "?text=" + mensagem;
     if (nome == "" || messageUsuario == "" || nome == null || messageUsuario == null){
         alert("Preencha todos os campos devidamente, obrigado.")
