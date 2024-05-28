@@ -20,6 +20,7 @@ body {
     border-left: 2.4px solid black;
     border-radius: 60px;
 }
+
 hr {
     border-color: rgba(255, 255, 255, 0.548);
     border-width: 1px;
@@ -36,9 +37,9 @@ header {
     padding: 1.5rem 1.8rem 1rem 1.5rem;
 }
 
-.logo{
+.logo {
     display: flex;
-    align-items: center;   
+    align-items: center;
 }
 
 .nav-list {
@@ -46,7 +47,7 @@ header {
     align-items: center;
 }
 
-.nav-list ul{
+.nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -63,12 +64,14 @@ header {
     font-size: 1.15vw;
     color: white;
 }
+
 .sociais-buttons {
     background-color: rgba(255, 0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .sociais-buttons button {
     outline: none;
     border: none;
@@ -83,6 +86,7 @@ header {
 .mobile-menu-icon {
     display: none;
 }
+
 .mobile-menu {
     display: none;
 }
@@ -93,56 +97,68 @@ header {
         justify-content: space-between;
         padding: 1rem 2rem .1rem 0rem;
     }
-    .nav-item{
+
+    .nav-item {
         display: none;
     }
-    .logo img{
+
+    .logo img {
         width: 80%;
     }
-    .sociais-buttons{
+
+    .sociais-buttons {
         display: none;
     }
+
     .mobile-menu-icon {
         display: block;
     }
+
     .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
+
     .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
+
     .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .nav-link{
+
+    .mobile-menu .nav-link {
         text-decoration: none;
         font-family: Poppins;
         font-weight: 700;
         font-size: .8rem;
         color: white;
     }
-    .mobile-menu .sociais-buttons{
+
+    .mobile-menu .sociais-buttons {
         display: block;
         align-items: center;
         justify-content: center;
         padding: 1rem 0rem 0rem 33.5vw;
         background-color: rgba(255, 0, 0, 0);
     }
+
     .mobile-menu .sociais-buttons button {
-        
+
         background-color: #17171700;
     }
+
     .open {
         display: block;
     }
-    
+
 }
+
 /*------------------------------------------------------------Fim do header------------------------------------------------------------------------*/
 .section1 {
     display: flex;
@@ -161,7 +177,7 @@ header {
 }
 
 .section1 h1 {
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 0 0 2% 5%;
     width: 100%;
@@ -175,13 +191,14 @@ header {
 }
 
 .section1 h2 {
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
 }
+
 .botaoWhat {
-    background-color: #1A1A1A;
-    height: 53px;
-    width: 52vw;
+    background-color: rgb(33, 68, 121);
+    height: 15%;
+    width: 50%;
     border-radius: 23px;
     display: flex;
     flex-direction: row;
@@ -191,44 +208,81 @@ header {
     border: none;
     color: white;
     margin: 0 0 0 5%;
+    transition: background-color 0.6s;
 }
+
 @media screen and (max-width: 1200px) {
     .section1 h2 {
         font-size: 16px;
         font-weight: bold;
     }
-    .containerSec1 h1{
+
+    .containerSec1 h1 {
         width: 90%;
+
     }
+
+
+
     .botaoWhat {
-        height: 53px;
-        width: 68vw;
+        height: 15%;
+        width: 40%;
+        margin-top: 40px;
     }
+
     .section1 h4 {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: 300;
         margin: 0 0 3% 5%;
         width: 90%;
+        margin-top: 20px;
+    }
+
+    .botaoWhat img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .botaoWhat h2 {
+        font-size: 1rem;
+        text-align: center;
+        width: 70%;
     }
 }
+
+@media screen and (max-width: 620px) {
+    .botaoWhat h2 {
+        font-size: 1rem;
+        flex-basis: auto;
+    }
+
+    .containerSec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botaoWhat {
+        height: 15%;
+        width: 80%;
+    }
+}
+
 .botaoWhat:hover {
     cursor: pointer;
     color: white;
-    margin: 0 0 0 5%;
+    background-color: rgb(54, 112, 199);
 }
 
 .botaoWhat:active {
     cursor: pointer;
-    background-color: red;
+
     color: white;
-    margin: 0 0 0 5%;
 }
+
 /*------------------------------------------------------------Fim da sect1------------------------------------------------------------------------*/
 .section2 {
     background-color: #0E0E0E;
-    min-height: 300px;
-    max-height: 816px;
-    margin-bottom: 100px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -245,20 +299,49 @@ header {
     justify-content: center;
     display: flex;
 }
-.section2 img{
-    width: 30%;
+
+.section2 div {
+    margin-top: 50px;
+    margin-bottom: 70px
+}
+
+.section2 img {
+    width: 18.75rem;
     margin: 0em 2em 0em 2em;
 }
+
 @media (max-width: 1185px) {
-    .section2 img{
-        width: 30%;
+    .section2 img {
+        width: 25vw;
     }
-    .section2 div{
+
+    .section2 div {
         display: block;
         justify-content: center;
         flex-direction: column;
     }
 
+}
+
+@media screen and (max-width: 620px) {
+    .section2 img {
+        width: 10rem;
+    }
+
+    .section2 img {
+        margin: 20px 0;
+    }
+
+    .section2 h1 {
+        color: #ffffff;
+        font-size: 5vw;
+        width: 60vw;
+    }
+
+    .section2 div {
+        margin-top: 30px;
+        margin-bottom: 30px
+    }
 }
 
 .section2 div {
@@ -267,6 +350,14 @@ header {
     align-items: center;
     flex-direction: row;
 }
+
+.section2 img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 /*------------------------------------------------------------Fim da sect2------------------------------------------------------------------------*/
 .section3 {
     background-color: #0E0E0E;
@@ -308,24 +399,32 @@ header {
     margin: 50px 0;
 }
 
-.Pedro, .Rafael, .Carolina {
+.Pedro,
+.Rafael,
+.Carolina {
     text-align: center;
     flex: 1 1 300px;
     margin: 10px;
 }
 
-.Pedro img, .Rafael img, .Carolina img {
+.Pedro img,
+.Rafael img,
+.Carolina img {
     width: 220px;
     height: 220px;
     border-radius: 50%;
 }
 
-.Pedro h1, .Rafael h1, .Carolina h1 {
+.Pedro h1,
+.Rafael h1,
+.Carolina h1 {
     font-size: 30px;
     margin: 10px 0;
 }
 
-.Pedro p, .Rafael p, .Carolina p {
+.Pedro p,
+.Rafael p,
+.Carolina p {
     font-size: 18px;
     text-align: justify;
     margin: 0 20px;
@@ -346,7 +445,6 @@ header {
     border-radius: 23px;
     display: flex;
     align-items: center;
-    gap: 10px;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -366,8 +464,6 @@ header {
     font-size: clamp(1rem, 1.2vw, 2rem);
     margin: 0;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
     flex-grow: 1;
 }
 
@@ -380,36 +476,49 @@ header {
         font-size: 35px;
         width: 60%;
     }
-    
+
     .textoTopo h2 {
         font-size: 19px;
     }
+
     .botaoSec3 {
         width: 50%;
     }
+
     .botaoSec3 img {
         height: 28px;
         width: 28px;
     }
-    .Pedro img, .Rafael img, .Carolina img {
+
+    .Pedro img,
+    .Rafael img,
+    .Carolina img {
         width: 150px;
         height: 150px;
     }
-    .Pedro h1, .Rafael h1, .Carolina h1 {
+
+    .Pedro h1,
+    .Rafael h1,
+    .Carolina h1 {
         font-size: 22px;
     }
-    .Pedro p, .Rafael p, .Carolina p {
+
+    .Pedro p,
+    .Rafael p,
+    .Carolina p {
         font-size: 16px;
     }
 }
+
 @media (max-width: 811px) {
-    .botaoSec3 h2{
+    .botaoSec3 h2 {
         font-size: 0.8rem;
     }
+
     .textoTopo h1 {
         font-size: 28px;
     }
-    
+
     .textoTopo h2 {
         font-size: 16px;
     }
@@ -420,11 +529,18 @@ header {
         flex-direction: column;
         align-items: center;
     }
+
     .botaoSec3 {
         width: 70%;
     }
-    .botaoSec3{
+
+    .botaoSec3 {
         flex-direction: column;
+
+    }
+
+    .botaoSec3 img {
+        margin-bottom: 10px;
     }
 }
 
@@ -433,17 +549,20 @@ header {
         font-size: 1rem;
         white-space: normal;
     }
+
     .botaoSec3 {
         width: 100%;
         flex-direction: column;
         align-items: center;
         padding: 10px;
     }
+
     .botaoSec3 img {
         height: 28px;
         width: 28px;
     }
 }
+
 /*------------------------------------------------------------Fim da sect3------------------------------------------------------------------------*/
 .section4 {
     text-align: center;
@@ -453,7 +572,7 @@ header {
 
 .section4 h1 {
     padding: 2% 0 0 0;
-    font-size: 32px;
+    font-size: 2.5rem;
 }
 
 .divRow4 {
@@ -487,28 +606,26 @@ header {
         align-items: center;
         gap: 20px;
     }
+
     .section4 h1 {
-        font-size: 27px;
+        font-size: 18px;
     }
-    
+
 }
 
 @media (max-width: 600px) {
 
     .imgSec4,
-    .imgSec41{
+    .imgSec41 {
         width: 200px;
     }
+
     .imgSec42 {
         width: 200px;
         margin-bottom: 40px;
     }
-
-    .section4 h1 {
-        font-size: 20px;
-        padding: 4% 0 0 0;
-    }
 }
+
 /*------------------------------------------------------------Fim da sect4------------------------------------------------------------------------*/
 .section5 {
     color: white;
@@ -524,16 +641,19 @@ header {
     font-size: 22px;
     font-weight: 400;
 }
+
 .section5 div h3 {
     font-size: 1.4vw;
     width: 90%;
     font-weight: 400;
 }
+
 .section5 div p {
     font-size: 22px;
     margin: 40px 0;
 }
-.divBotaoSec3{
+
+.divBotaoSec3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -543,41 +663,48 @@ header {
     .section5 div {
         margin: 0 5%;
     }
+
     .section5 div h1 {
         font-size: 20px;
         text-align: center;
         margin: 0 0 20px 0;
     }
+
     .section5 div h3 {
         font-size: 3.5vw;
         display: none;
         font-weight: 400;
     }
+
     .section5 div p {
         font-size: 16px;
         margin: 40px 0;
     }
 }
+
 /*------------------------------------------------------------Fim da sect5------------------------------------------------------------------------*/
 .section6 {
     background-color: #0E0E0E;
     color: white;
-    min-height: 100vh;
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titulo{
+
+.titulo {
     font-size: 3rem;
     margin: 2rem 0rem;
 }
-.pergunta img{
+
+.pergunta img {
     width: 32px;
     height: 32px;
 }
-.faq{
+
+.faq {
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
@@ -586,62 +713,78 @@ header {
     border-radius: 20px;
 }
 
-.pergunta{
+.pergunta {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
 }
-.pergunta h3{
+
+.pergunta h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin: 1rem 0 0 1rem;
     width: 90%;
 }
-.resposta p{
+
+.resposta p {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.2rem;
     width: 90%;
     margin: 1rem 0 0 1rem;
 }
+
 .resposta {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease;
 }
-.faq.active .resposta{
+
+.faq.active .resposta {
     max-height: 300px;
     animation: fade 1s ease-in-out;
 }
-.faq.active img{
+
+.faq.active img {
     transform: rotate(180deg);
 }
+
 img {
     transition: transform 0.2s ease-in;
     margin-right: 10px;
 }
 
-@keyframes fade{
+@keyframes fade {
     from {
         opacity: 0;
         transform: translateY(-10px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translate(0px);
     }
 }
+
+@media (max-width: 768px) {
+    .section6 h2 {
+        font-size: 30px;
+    }
+}
+
 /*------------------------------------------------------------Fim da sect6------------------------------------------------------------------------*/
 
 .section7 {
     height: 927px;
     background-color: #0E0E0E;
 }
-.section7 h1{
+
+.section7 h1 {
     text-align: center;
     font-size: 3rem;
     color: white;
 }
+
 .fundoContato {
     height: 651px;
     background-color: #ad1c1c00;
@@ -659,7 +802,8 @@ img {
     overflow: hidden;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
     padding: 40px;
 }
 
@@ -743,19 +887,24 @@ img {
         overflow: hidden;
         flex-direction: column;
     }
+
     .contact-info {
         order: 1;
     }
+
     .contact-form {
         order: 2;
     }
-    .section7 h1{
+
+    .section7 h1 {
         text-align: center;
         font-size: 3rem;
         margin: 100px 5px;
         color: white;
     }
-    .contact-info, .contact-form {
+
+    .contact-info,
+    .contact-form {
         padding: 30px;
     }
 }
@@ -768,11 +917,13 @@ img {
         align-items: center;
         gap: 20px;
     }
+
     .section4 h1 {
         font-size: 27px;
     }
-    
+
 }
+
 /*------------------------------------------------------------Fim da sect7------------------------------------------------------------------------*/
 footer {
     background-color: #0E0E0E;
@@ -789,11 +940,13 @@ footer {
     width: 100%;
     align-items: center;
 }
-.contentFooter div{
+
+.contentFooter div {
     width: 100%;
     align-items: center;
     justify-content: center;
 }
+
 .logoFooter {
     width: 33.3%;
     min-height: 185px;
@@ -822,7 +975,7 @@ footer {
     font-size: 20px;
     text-align: center;
     width: 65%;
-    margin-bottom:  .5em;
+    margin-bottom: .5em;
     border-bottom: 2px solid white;
 }
 
@@ -843,13 +996,13 @@ footer {
     font-size: 20px;
     text-align: center;
     width: 45%;
-    margin-bottom:  .4em;
+    margin-bottom: .4em;
     border-bottom: 2px solid white;
 }
 
 .endereco h2 {
     font-size: 16px;
-    margin-bottom:  4.6em;
+    margin-bottom: 4.6em;
 }
 
 .copyFooter {
@@ -858,18 +1011,23 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 2%;
+    text-align: center;
 }
+
 .copyFooter h4 {
     font-weight: 100;
 }
+
 @media screen and (max-width: 850px) {
     .contentFooter {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     .contatoFooter {
         margin: 0em 0em 2em 0em;
     }
 }
+
 /*------------------------------------------------------------Fim do footer------------------------------------------------------------------------*/
