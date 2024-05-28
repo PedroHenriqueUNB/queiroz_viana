@@ -299,6 +299,16 @@ header {
     justify-content: center;
     display: flex;
 }
+.section2 h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 40vw;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-bottom: 20px;
+}
 
 .section2 div {
     margin-top: 50px;
