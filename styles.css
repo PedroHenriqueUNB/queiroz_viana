@@ -902,6 +902,7 @@ img {
     background-color: #444;
 }
 
+
 @media (max-width: 860px) {
     .fundoContato .container {
         display: flex;
@@ -947,6 +948,12 @@ img {
 
     .section4 h1 {
         font-size: 27px;
+    }
+
+}
+@media (max-width: 500px) {
+    #textoEmail{
+        font-size: 3vw;
     }
 
 }
