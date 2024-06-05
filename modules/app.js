@@ -33,18 +33,49 @@ document.getElementById('email').addEventListener('input', function (e) {
 });
 */
 
-function enviarWhats() {
-    var messageUsuario = document.getElementById("message").value;
-    var nome = document.getElementById("name").value;
-    var mensagem = `Olá, meu nome é ${nome}, gostaria de solicitar um serviço. A mensagem é a seguinte: "${messageUsuario}". Agradeço desde já pela atenção.`
-    mensagem = encodeURIComponent(mensagem);
-    var link = "https://wa.me/"
-             + "/" + 5561995997277
-             + "?text=" + mensagem;
-    if (nome == "" || messageUsuario == "" || nome == null || messageUsuario == null){
-        alert("Preencha todos os campos devidamente, obrigado.")
-    }else {
-        window.location.href = link;
-    }
+// function enviarWhats() {
+//     var messageUsuario = document.getElementById("message").value;
+//     var nome = document.getElementById("name").value;
+//     var mensagem = `Olá, meu nome é ${nome}, gostaria de solicitar um serviço. A mensagem é a seguinte: "${messageUsuario}". Agradeço desde já pela atenção.`
+//     mensagem = encodeURIComponent(mensagem);
+//     var link = "https://wa.me/"
+//              + "/" + 5561995997277
+//              + "?text=" + mensagem;
+//     if (nome == "" || messageUsuario == "" || nome == null || messageUsuario == null){
+//         alert("Preencha todos os campos devidamente, obrigado.")
+//     }else {
+//         window.location.href = link;
+//     }
     
+// }
+function formatoNumero(value) {
+    if (!value) return value;
+    const numeroTel = value.replace(/[^\d]/g, '');
+    const tamanhoNumeroCelular = numeroTel.length;
+
+    if (tamanhoNumeroCelular < 3) {
+        return numeroTel;
+    }
+    if (tamanhoNumeroCelular < 7) {
+        return `(${numeroTel.slice(0, 2)}) ${numeroTel.slice(2)}`;
+    }
+    if (tamanhoNumeroCelular < 11) {
+        return `(${numeroTel.slice(0, 2)}) ${numeroTel.slice(2, 6)}-${numeroTel.slice(6)}`;
+    }
+    return `(${numeroTel.slice(0, 2)}) ${numeroTel.slice(2, 7)}-${numeroTel.slice(7, 11)}`;
 }
+
+function numeroCelFormatado() {
+    const inputField = document.getElementById('numeroTelefone');
+    const valorInputFormatado = formatoNumero(inputField.value);
+    inputField.value = valorInputFormatado;
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('contatoForm');
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alert('Mensagem enviada com sucesso!');
+    });
+});

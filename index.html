@@ -29,7 +29,7 @@
         </ul>
       </div>
 
-      
+
 
       <div class="mobile-menu-icon">
         <button onclick="mostrarMenu()"><img class="icon" src="src/Img/menu_white_36dp.svg" alt=""></button>
@@ -42,18 +42,23 @@
         <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
         <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
       </ul>
-      
+
     </div>
   </header>
   <!--Section 1-->
   <section id="paginaPrincipal" class="section1">
     <div class="containerSec1">
-      <h1>Segurança jurídica para a sua empresa e assessoria personalizada em contratações com a Administração Pública.</h1>
+      <h1>Segurança jurídica para a sua empresa e assessoria personalizada em contratações com a Administração Pública.
+      </h1>
       <h4>Confiabilidade e expertise para lidar com uma ampla gama de questões legais.</h4>
+
+      <a href="https://wa.me/5561995072902?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!"
+        target="_blank">
         <button class="botaoWhat">
           <img height="30" width="30" src="src/Img/what.png" alt="Whatsapp">
           <h2>Quero uma consulta sobre questões legais</h2>
         </button>
+      </a>
     </div>
   </section>
   <hr>
@@ -67,10 +72,16 @@
   </section>
   <!--Section 3-->
   <div class="divBotaoSec3">
-    <button class="botaoSec3">
-      <img src="src/Img/what.png" alt="Whatsapp">
-      <h2>Quero uma consulta sobre questões legais</h2>
-    </button>
+
+    <a href="https://wa.me/5561995072902?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!"
+      target="_blank">
+      <button class="botaoSec3">
+        <img src="src/Img/what.png" alt="Whatsapp">
+        <h2>Quero uma consulta sobre questões legais</h2>
+      </button>
+    </a>
+
+  </div>
   </div>
   </section>
   <hr>
@@ -113,16 +124,19 @@
     </div>
 
     <div class="divBotaoSec3">
-      <button class="botaoSec3">
-        <img src="src/Img/what.png" alt="Whatsapp">
-        <h2>Quero uma consulta sobre questões legais</h2>
-      </button>
+      <a href="https://wa.me/5561995072902?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!"
+        target="_blank">
+        <button class="botaoSec3">
+          <img src="src/Img/what.png" alt="Whatsapp">
+          <h2>Quero uma consulta sobre questões legais</h2>
+        </button>
+      </a>
     </div>
   </section>
   <hr>
   <!--Section 6-->
   <section id="faq" class="section6">
-    <h2 class="titulo">FAQ</h1>
+    <h2 class="titulo">FAQ</h2>
 
       <div class="faq">
         <div class="pergunta">
@@ -174,19 +188,26 @@
             o mais rápido possível.</h2>
           <ul>
             <li><img style="width: 25px;" src="src/Img/what.png" alt=""> (61) 91234-5678</li>
-            <li id="textoEmail"><img style="width: 25px;" src="src/Img/email.png" alt=""> adv.associadosqueirozviana@gmail.com</li>
+            <li id="textoEmail"><img style="width: 25px;" src="src/Img/email.png" alt="">
+              adv.associadosqueirozviana@gmail.com</li>
             <li>
-              <img style="width: 25px;" src="src/Img/location.png" alt="">SHN Quadra 1 Bloco A Área Especial A Sala, 1509 - Asa Norte 70701-010 - Brasília
+              <img style="width: 25px;" src="src/Img/location.png" alt="">SHN Quadra 1 Bloco A Área Especial A Sala,
+              1509 - Asa Norte 70701-010 - Brasília
             </li>
           </ul>
         </div>
         <div class="contact-form">
-          <form>
+          <form action="https://api.staticforms.xyz/submit" method="post">
             <label for="name">Seu nome</label>
             <input type="text" id="name" name="name" required>
+            <label for="number">Seu telefone</label>
+            <input type="text" id="numeroTelefone" name="phone" oninput="numeroCelFormatado()" onblur="numeroCelFormatado()" required>
             <label for="message">Sua mensagem</label>
             <textarea id="message" name="message" rows="4" required></textarea>
-            <button onclick="enviarWhats()" type="button">Enviar uma mensagem</button>
+            <button onclick="enviarWhats()" type="submit">Enviar uma mensagem</button>
+
+            <input type="hidden" name="accessKey" value="e1c40d21-12e7-4ae6-b4a2-78009cf5a974">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5502/obrigado.html">
           </form>
         </div>
   </section>
@@ -204,13 +225,14 @@
       <div class="contatoFooter">
         <h1>Entre em contato</h1>
         <h2>Celular: (61) 99507-2902</h2>
-        <h2 style="padding: 20px;">E-mail: adv.associadosqueirozviana@gmail.com</h2>
+        <h2 style="padding: 0 20px;">E-mail: adv.associadosqueirozviana@gmail.com</h2>
       </div>
 
-      <div class="endereco">
+      <div class="contatoFooter">
         <h1>Endereço</h1>
-        <h2 style="padding: 20px">SHN QUADRA 1 BLOCO A ÁREA ESPECIAL A SALA, 1509 - ASA NORTE 70701-010 - BRASÍLIA</h2>
+        <h2>SHN Quadra 1 Bloco A Área Especial A Sala, 1509 - Asa Norte 70701-010 - Brasília</h2>
       </div>
+      
     </div>
   </footer>
   <div class="copyFooter">
